@@ -7,18 +7,23 @@
 }
 
 body {
-  padding: 0 15vw;
+  /* padding: 0 15vw; */
   border: 1px solid #000000;
-  color: #101010;
   color: #606060;
+  border-radius: 4px;
 }
 
 a {
   text-decoration: none;
 }
+img {
+  border-radius: 4px;
+}
 
 header {
-  padding: 2.9vh 1vw;
+  /* padding: 2.9vh 1vw; */
+  padding: 0 16vw;
+  margin: 2.9vh 0;
   border: 1px solid #3407ff;
 }
 
@@ -219,7 +224,8 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 30px;
-  padding: 0 1vw;
+  /* padding: 0 1vw; */
+  padding: 0 16vw;
   border: 1px solid #000;
 }
 .section_main {
@@ -280,7 +286,7 @@ main {
   left: -8px;
 }
 .news_aside {
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 15px 7px;
   background-color: #f5f7f8;
   border-radius: 4px;
@@ -307,7 +313,6 @@ main {
 }
 .news_main {
   background-color: #ebebeb;
-  margin-top: 15px;
 }
 .news_main_inner {
   display: grid;
@@ -339,7 +344,7 @@ main {
 .footer_more {
   border: 1px solid #ff00aa;
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin-left: 70px;
   height: 100%;
   display: flex;
@@ -460,7 +465,7 @@ main {
   height: 115px;
   overflow-clip-margin: content-box;
   overflow: clip;
-  border-radius: 6px;
+  border-radius: 4px;
   margin-bottom: 10px;
 }
 .shop_img p {
@@ -678,6 +683,38 @@ main {
   gap: 20px;
 }
 
+.issue_main_img {
+  border: 1px solid #ff0505;
+}
+.issue_main_img > img {
+}
+
+.issue_main_img p {
+  padding: 10px 0 7px 0;
+  font-size: 14.8px;
+  line-height: 1.15em;
+}
+
+.issue_profile {
+  display: flex;
+  align-items: center;
+}
+.issue_profile img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.issue_footer {
+  margin-top: 24px;
+}
+.issue_more {
+  margin: 0;
+}
+
+.fa-plus {
+  margin-left: 5px;
+  color: #5290ff;
+}
+
 .section_side {
   /* border: 1px solid #00ccff; */
   display: grid;
@@ -695,26 +732,179 @@ main {
   justify-content: center;
   align-items: center;
 }
-.section_login span {
-}
+
 .section_login button {
   padding: 15px 120px;
   margin: 15px 0;
   background-color: var(--fz);
   border: none;
   color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
 }
-.section_login button strong {
-  font-size: 18px;
+.section_login button span {
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 20px;
+  margin-right: 7px;
+}
+.section_login > span:last-child {
+  font-size: 14px;
 }
 .section_side_img {
   border: 1px solid #ff6600;
 }
 .section_weather {
   border: 1px solid #eeff00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.weather_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px;
+  /* border: 1px solid #9900ff; */
+  width: 90%;
+}
+
+.weather_text {
+}
+.weather_text span:first-child {
+  color: #000;
+}
+.weather_text a {
+  border-radius: 24px;
+  padding: 3px;
+  border: 1px solid #ebebeb;
+  font-size: 13px;
+}
+.weather_text a::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.fdc455b9.png);
+  background-size: 422px 405px;
+  background-position: -367px -391px;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  margin: 3px 2px 0 0;
+  vertical-align: top;
+}
+.weather_title > span:last-child {
+  font-size: 15px;
+}
+.weather_img {
+  border-top: solid 1px #ebebeb;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
+  column-gap: 10px;
+}
+.weather_now {
+}
+.weather_now_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #000; */
+  color: #000;
+}
+
+.weather_now_inner span {
+  font-size: 50px;
+}
+.weather_now_inner span strong {
+  font-size: 40px;
+}
+
+.weather_now_img::before {
+  content: "";
+  display: block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+  background-size: 641px 587px;
+  background-position: -174px -174px;
+  background-repeat: no-repeat;
+  width: 86px;
+  height: 86px;
+}
+.weather_now a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather_now a span {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.weather_now a span em {
+  opacity: 0.5;
+}
+
+.weather_now a span b {
+  margin: 10px 0;
+  color: #6dbaf4;
+}
+.weather_now a span strong:last-child {
+  color: #d73534;
+}
+.weather_now p {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+}
+.weather_now p span:first-child {
+  margin-left: 10px;
+}
+.weather_now p span:first-child::after {
+  content: "";
+  position: absolute;
+  background-color: #d3d5d7;
+  border-radius: 50%;
+  height: 3px;
+  width: 3px;
+  left: 91px;
+  bottom: 4px;
+}
+.weather_now p span b {
+  color: var(--fz);
+}
+.weather_time {
+  display: flex;
+  flex-direction: column;
+}
+.weather_time div {
+  height: 85px;
+}
+.weather_time ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 13px;
+}
+.weather_time ul li:first-child {
+}
+.weather_time ul li:nth-child(1)::before,
+.weather_time ul li:nth-child(2)::before,
+.weather_time ul li:nth-child(3)::before,
+.weather_time ul li:nth-child(4)::before,
+.weather_time ul li:nth-child(5)::before {
+  content: "";
+  display: block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+  background-size: 641px 587px;
+  background-position: -264px -522px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 5px 0;
+}
+
 .section_stock {
   border: 1px solid #3cff00;
 }
@@ -723,4 +913,136 @@ main {
 }
 .section_guide {
   border: 1px solid #ff00bf;
+}
+footer {
+  height: 460px;
+  background-color: #f5f6f7;
+  margin-top: 60px;
+  display: grid;
+  grid-template-rows: 160px 60px 140px 100px;
+  border-top: solid 1px #ebebeb;
+  /* border: 1px solid #000; */
+}
+footer > div {
+  margin: 0 16vw;
+  padding: 25px 0;
+}
+.footer_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_card_inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid #000; */
+}
+.footer_card_inner:last-child {
+  margin-right: 65px;
+}
+
+.footer_card_text h3 {
+  color: var(--fz);
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer_card_text h4 {
+  font-weight: bold;
+  padding: 7px 0;
+  font-size: 15px;
+}
+.footer_card_text h5 {
+  font-size: 14px;
+  line-height: 1.3em;
+}
+.footer_notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 1px #ebebeb;
+}
+.footer_notice span .fa {
+  color: #606060;
+  margin-left: 2px;
+}
+.footer_list {
+  display: grid;
+  grid-template-columns: 860px 1fr;
+  border-bottom: solid 1px #ebebeb;
+}
+.footer_list_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid #000; */
+}
+.footer_list_text > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.footer_list_text div h3 {
+  width: 9%;
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+}
+.footer_list_text div a {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-right: 5px;
+  color: #404040;
+  position: relative;
+}
+.footer_list_text div a::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 1px;
+  background-color: #d3d5d7;
+  left: -18px;
+}
+.footer_list_text div a:nth-child(2)::before {
+  content: none;
+}
+.footer_list_icon {
+  display: flex;
+  /* border: 1px solid #000; */
+}
+.footer_list_icon_inner {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 56px;
+}
+.footer_list_icon_text {
+  margin-right: 20px;
+  line-height: 1.5em;
+  font-size: 14px;
+}
+.footer_list_icon_text h2 {
+  color: #000;
+  font-weight: bold;
+}
+.footer_list_icon_text a {
+  color: #404040;
+}
+.footer_introduce {
+  padding: 20px 200px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  color: #404040;
+}
+.footer_introduce strong {
+  color: #000;
+  font-weight: bold;
 }
