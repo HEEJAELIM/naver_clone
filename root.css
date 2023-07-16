@@ -1,4 +1,17 @@
 :root {
-  --fz: #03c75a;
-  --l_fz: #606060;
+  --naver: #03c75a;
+  --base: #101010;
+  --baseG: #606060;
+  --ft: #080808;
+  --ftW: #fff;
+  --bg: #f5f7f8;
+  --bd: #e3e5e8;
 }
+
+color: var(--naver);
+color: var(--base);
+color: var(--baseG);
+color: var(--ft);
+color: var(--ftW);
+color: var(--bg);
+color: var(--bd);
